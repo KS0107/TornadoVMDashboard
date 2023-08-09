@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Build Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h3 id="title">Current Benchmark Build Dashboard</h3>
+
+    <div class="row">
+        <div class="column">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label for="csv-upload" class="custom-file-upload">Upload CSV File</label>
+                <input type="file" name="csv_file" accept=".csv" id="csv-upload">
+                <button type="submit">Upload</button>
+            </form>
+            <table id="test-results-table">
+                <tr>
+                    <th>Run ID</th>
+                    <th>Test Result</th>
+                    <th>Test Duration</th>
+                </tr>
+                <!-- {% for test_run in test_runs %}
+                <tr>
+                    <td>{{ test_run.test_name }}</td>
+                    <td>{{ test_run.test_result }}</td>
+                    <td>{{ test_run.test_duration }}</td>
+                </tr>
+                
+                {% endfor %} -->
+
+                <tr>
+                    <td>Test 1</td>
+                    <td>Pass</td>
+                    <td>10 ms</td>
+                </tr>
+                <tr>
+                    <td>Test 2</td>
+                    <td>Fail</td>
+                    <td>15 ms</td>
+                </tr>
+                <tr>
+                    <td>Test 3</td>
+                    <td>Incomplete</td>
+                    <td>20 ms</td>
+                </tr>
+                <tr>
+                    <td>Test 4</td>
+                    <td>Pass</td>
+                    <td>10 ms</td>
+                </tr>
+                <tr>
+                    <td>Test 5</td>
+                    <td>Fail</td>
+                    <td>15 ms</td>
+                </tr>
+                <tr>
+                    <td>Test 6</td>
+                    <td>Incomplete</td>
+                    <td>20 ms</td>
+                </tr>
+            </table>
+            <h3 class="minititle">Build Times</h3>
+        </div>
+
+        <div class="column">
+          <h3 class="minititle">Test Performance</h3>
+          <table id="graphtable"> 
+            <tr>
+                <td><div class="graph">
+                    <img src="https://img.freepik.com/premium-vector/line-graph-with-bar-chart-shows-stock-market-price-financial-business-investment-profit_120819-646.jpg" alt="graph1" width="500" height="300">
+                </div></td>
+                <td><div class="graph"></div></td>  
+            </tr>
+
+            <tr>
+                <td><div class="graph"></div></td>
+                <td><div class="graph"></div></td>
+            </tr>
+            
+          </table>
+        </div>
+    </div>
+
+            
+           
+
+</body>
+</html>
