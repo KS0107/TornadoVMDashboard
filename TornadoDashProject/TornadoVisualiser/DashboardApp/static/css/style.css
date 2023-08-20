@@ -3,10 +3,12 @@
     font-family: "Montserrat", Arial, sans-serif;
     box-sizing: border-box;
     scroll-behavior: fixed;
+    color: white;
 }
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #212121;
 }
 button {
     color: white;
@@ -17,7 +19,7 @@ button {
     transition: 0.2s;
 }
 button:hover {
-    background-color: #0066cc;
+    background-color: #2a2a2a;
 }
 
 .collapsible {
@@ -53,12 +55,11 @@ button:hover {
 
 /* Create two equal columns that sits next to each other */
 .column {
-    background-color:#c6e2ff;
+    background-color:#383838;
+    color: white;
     flex: 50%;
     padding: 2px;
-    height: 85vh; 
-    border-radius: 2%;
-    margin: 3px;
+    height: 85vh;    margin: 3px;
 }
 
 /* Hide the default file input appearance */
@@ -69,7 +70,7 @@ button:hover {
 /* Common styles for both button and custom file upload */
 .custom-file-upload,
 button {
-    background-color: #0084ff;
+    background-color: #212121;
     color: white;
     padding: 0; /* Remove padding from the button */
     border: none;
@@ -86,7 +87,7 @@ button {
 
 /* Apply button hover effect to both elements */
 .custom-file-upload:hover, button:hover {
-    background-color: #0066cc;
+    background-color: #252525;
 }
 
 
@@ -94,10 +95,8 @@ button {
 
 #title {
     text-align: center;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #1893ff;
-    border-radius: 10px;
+    margin-bottom: px;
+    padding: 10x;
     color:white;
     transition: 0.3s;
 }
@@ -107,9 +106,8 @@ button {
     text-align: center;
     margin-bottom: 5px;
     padding: 5px;
-    background-color: #1893ff;
+    background-color: #353434;;
     color:white;
-    
     transition: 0.3s;
     margin-left: 10px;
     margin-right:10px;
@@ -160,12 +158,12 @@ table {
     height: auto;
 }
 
-  #test-results-table tr:hover {background-color: #89baff;}
+  #test-results-table tr:hover {background-color: #353535;}
   
   #test-results-table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #1893ff;
+    background-color: #353434;
     color: white;
   }
